@@ -370,8 +370,8 @@ text-decoration: underline;
 .products .box-container .box .flex{
     display: flex;
     align-items: center;
-    gap: 1.5rem;
-    margin-top: 1rem;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 .products .box-container .box .flex .price{
     margin-right: auto;
@@ -391,6 +391,64 @@ text-decoration: underline;
 .products .more-btn{
     margin-top: 2rem;
     text-align: center;
+}
+.products .box-container .box .flex .fa-edit{
+    width: 5rem;
+    background-color: var(--yellow);
+    color: var(--black);
+    cursor: pointer;
+    font-size: 1.8rem;
+    height: 4.5rem;
+    border: var(--border);
+}
+.products .box-container .box .flex .fa-edit:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+.products .box-container .box .fa-times{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--red);
+    color: var(--white);
+    border: var(--border);
+    line-height: 4rem;
+    height: 4.3rem;
+    width: 4.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.products .box-container .box .fa-times:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+.products .box-container .box .sub-total{
+    margin: 1rem;
+    font-size: 1.8rem;
+    color: var(--light-color);
+}
+.products .box-container .box .sub-total span{
+    color: var(--red);
+}
+.products .cart-total{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    border: var(--border);
+    padding: 1.5rem;
+}
+.products .cart-total p{
+    font-size: 2.5rem;
+    color: var(--light-color);
+}
+.products .cart-total p span{
+    color: var(--red);
+}
+.products .cart-total .btn{
+    margin-top: 0;
 }
 .about .row{
     display: flex;
@@ -480,6 +538,64 @@ text-decoration: underline;
     text-transform: capitalize;
     color: var(--black);
 }
+.contact .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.contact .row .image{
+    flex: 1 1 40rem;
+}
+.contact .row .image img{
+    width: 100%;
+}
+.contact .row form{
+    border: var(--border);
+    flex: 1 1 40rem;
+    padding: 2rem;
+    text-align: center;
+}
+.contact .row form h3{
+    font-size: 2.5 rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.contact .row form .box{
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    color: var(--black);
+    border: var(--border);
+    padding: 1.4rem;
+    width: 100%;
+}
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+.search-form form{
+    display: flex;
+    gap: 1.3rem;
+}
+.search-form form .box{
+    width: 100%;
+    border: var(--border);
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+}
+.search-form form .fa-search{
+    width: 6rem;
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+.search-form form .fa-search:hover{
+    background-color: var(--yellow);
+    color: var(--black);
+}
 
 /* Media Queries */
 @media (max-width:991px){
@@ -525,6 +641,9 @@ text-decoration: underline;
         grid-template-columns: 1fr;
     }
     .heading h3{
-        font-size: 4rem;
+        font-size: 3.5rem;
+    }
+    .products .cart-total{
+        justify-content: center;
     }
 }

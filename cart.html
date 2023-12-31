@@ -13,9 +13,9 @@
     <!-- Header -->
     <header class="header">
         <section class="flex">
-            <a href="home.html" class="logo">yum-yum</a>
+            <a href="index.html" class="logo">yum-yum</a>
             <nav class="navbar">
-                <a href="home.html">home</a>
+                <a href="index.html">home</a>
                 <a href="about.html">about</a>
                 <a href="menu.html">menu</a>
                 <a href="orders.html">orders</a>
@@ -37,6 +37,66 @@
             </div>
         </section>
     </header>
+
+    <div class="heading">
+        <h3>shooping cart</h3>
+        <p><a href="index.html">home</a><span> / cart</span></p>
+    </div>
+
+    <!-- Shooping Cart Section -->
+    <section class="products">
+        <h1 class="title">your cart</h1>
+        <div class="cart-total">
+            <p>cart : total <span>$9</span></p>
+            <a href="checkout.html" class="btn">procced to checkout</a>
+        </div>
+        <div class="box-container">
+            <form action="" method="post" class="box">
+                <button type="submit" class="fas fa-eye" name="quick-view"></button>
+                <button type="submit" class="fas fa-times" name="delete" onclick="return confirm('delete this item?');"></button>
+                <img src="uploaded_img/dish-1.png" alt=""> 
+                <div class="name">main dishes 01</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>3</div>
+                    <input type="number" type="qty" class="qty" min="1" max="99" value="1"
+                    onkeypress="if(this.value.lenght == 2) return false">
+                    <button type="submit" class="fas fa-edit"></button>
+                </div>
+                <div class="sub-total">sub total : <span>$3</span></div>
+            </form>
+            <form action="" method="post" class="box">
+                <button type="submit" class="fas fa-eye" name="quick-view"></button>
+                <button type="submit" class="fas fa-times" name="delete" onclick="return confirm('delete this item?');"></button>
+                <img src="uploaded_img/pizza-2.png" alt=""> 
+                <div class="name">delicious pizza 02</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>3</div>
+                    <input type="number" type="qty" class="qty" min="1" max="99" value="1"
+                    onkeypress="if(this.value.lenght == 2) return false">
+                    <button type="submit" class="fas fa-edit"></button>
+                </div>
+                <div class="sub-total">sub total : <span>$3</span></div>
+            </form>
+            <form action="" method="post" class="box">
+                <button type="submit" class="fas fa-eye" name="quick-view"></button>
+                <button type="submit" class="fas fa-times" name="delete" onclick="return confirm('delete this item?');"></button>
+                <img src="uploaded_img/dessert-2.png" alt=""> 
+                <div class="name">delicious dessert 02</div>
+                <div class="flex">
+                    <div class="price"><span>$</span>3</div>
+                    <input type="number" type="qty" class="qty" min="1" max="99" value="1"
+                    onkeypress="if(this.value.lenght == 2) return false">
+                    <button type="submit" class="fas fa-edit"></button>
+                </div>
+                <div class="sub-total">sub total : <span>$3</span></div>
+            </form>
+        </div>
+        <div class="more-btn">
+            <form action="" method="post">
+                <button type="submit" class="delete-btn" name="delete_all" onclick="return confirm('delete all from cart');">delete all</button>
+            </form>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
